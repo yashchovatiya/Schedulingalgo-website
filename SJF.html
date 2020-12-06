@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First come first serve</title>
+    <title>Shortest Job First</title>
     <link rel="stylesheet" href="/css/demo.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/respo.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap" rel="stylesheet">
     
 </head>
@@ -18,32 +17,30 @@
             <a href="/index.html">OS</a>
         </div>
         <div class="mid">
-            <a href="/algorithms/FCFS.html">FCFS</a>
-            <a href="/algorithms/SJF.html">SJF</a>
-            <a href="/algorithms/RR.html">RR</a>
-            <a href="/algorithms/hrrn.html">HRRN</a>
-            <a href="/algorithms/ljf.html">LJF</a>
-            <a href="/algorithms/srtf.html">SRTF</a>
-            <a href="/algorithms/lrtf.html">LRTF</a>
-            <a href="/algorithms/pr.html">PRIORITY</a>
+            <a href="/FCFS.html">FCFS</a>
+            <a href="/SJF.html">SJF</a>
+            <a href="/RR.html">RR</a>
+            <a href="/hrrn.html">HRRN</a>
+            <a href="/ljf.html">LJF</a>
+            <a href="/srtf.html">SRTF</a>
+            <a href="/lrtf.html">LRTF</a>
+            <a href="/pr.html">PRIORITY</a>
 
 
         </div>
         <div class="right">
-            <a href="/readmore/about_us.html">about us</a>
+            <a href="/about_us.html">about us</a>
         </div>
     </div>
-
     <br>
-    <h1>FIRST COME FIRST SERVE</h1>
-    <!-- <button class="btn" id="withoutIO">without IO</button>
-    <button class="btn" id="withIO">with IO</button> -->
+    <h1>SHORTEST JOB FIRST</h1>
     <label style="font-size: 20px; width: 60px;height: 34px;">IO</label>
     <label class="switch">
         <input type="checkbox" id="check">
         <span class="slider round"></span>
       </label>
     <br>
+
     <input type="number" id="process" placeholder="Enter Total process">
     <button class="btn" id="add">ADD ROWS</button>
     <br><br>
@@ -56,8 +53,8 @@
         <div class="item ans" style="border: 2px solid black;">Completion Time</div>
         <div class="item ans" style="border: 2px solid black;">Turn Around Time</div>
         <div class="item ans" style="border: 2px solid black;">Waiting Time</div>
-    </div>
 
+    </div>
     <div id="container_IO">
         <div class="item">Process No.</div>
         <div class="item">Total IO</div>
@@ -68,7 +65,7 @@
         <div class="item ans" style="border: 2px solid black;">Turn Around Time</div>
         <div class="item ans" style="border: 2px solid black;">Waiting Time</div>
     </div>
-    
+
     <div id="data">
         <label class="cen">0</label>
         <input type="number" class="cen">
@@ -95,6 +92,7 @@
     <br>
     <button id="compute" class="btn">Compute</button>
     <button id="reset" class="btn">Reset</button>
+
     <br><br>
 
     <!-- <button id="animate" class="btn">Animate</button> -->
@@ -115,7 +113,5 @@
     
 </body>
 <script src="/js/jquery.js"></script>
-<script type="module" src="/js/fcfs.js"></script>
-<script src="/js/priority-queue.js"></script>
-
+<script type="module" src="/js/sjf.js"></script>
 </html>
